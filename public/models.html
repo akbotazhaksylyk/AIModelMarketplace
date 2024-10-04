@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Models</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- the favicon for the webpage -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/100/artificial-intelligence.png">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="blockchain.js" defer></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="background-video">
+        <video id="myVideo" autoplay muted loop>
+            <source src="../../media/ai.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- text on the video -->
+    <div id="video-message">
+        <h1 id="message-one" class="video-message">AI Model Marketplace: Explore, Buy, and List Cutting-Edge AI Models</h1>
+    </div>
+
+    <div class="arrow bounce">
+    </div>
+
+    <div class="content-wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <!-- logo image acts as a link to the homepage. -->
+                    <a href="index.html">
+                        <img src="https://img.icons8.com/cotton/100/artificial-intelligence.png" alt="Logo"
+                            style="height: 50px;">
+                    </a>
+                </li>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="models.html">All Models</a></li>
+                <li><a href="profile.html">My profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <section>
+                    <h2>List a New AI Model</h2>
+                    <form id="listModelForm">
+                        <input id="modelName" type="text" placeholder="Model Name" required>
+                        <input id="modelDescription" type="text" placeholder="Model Description" required>
+                        <input id="modelPrice" type="number" step="0.01" placeholder="Price (in ETH)" required>
+                        <button type="submit" class="btn btn-primary">List Model</button>
+                    </form>
+                </section>
+    
+                <section class="models-section">
+                    <h2>Available Models</h2>
+                    <!-- <button onclick="showAvailableModels()">View Available Models</button> -->
+                    <div id="modelList"></div>
+                </section>
+    
+                <section class="purchase-section">
+                    <h2>Purchase Model by ID</h2>
+                    <div>
+                        <input id="purchaseModelId" type="number" placeholder="Model ID">
+                        <button onclick="purchaseModel(document.getElementById('purchaseModelId').value)" class="btn btn-primary">Purchase</button>
+                    </div>
+                </section>
+    
+                <section class="details-section">
+                    <h2>View Model Details</h2>
+                    <input id="viewModelId" type="number" placeholder="Model ID">
+                    <button id="viewDetailsButton" class="btn btn-secondary">View Details</button>
+                    <div id="modelDetails"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

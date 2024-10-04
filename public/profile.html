@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Models</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- the favicon for the webpage -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/100/artificial-intelligence.png">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="blockchain.js" defer></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="background-video">
+        <video id="myVideo" autoplay muted loop>
+            <source src="../../media/ai.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content-wrapper-profile">
+        <nav>
+            <ul>
+                <li>
+                    <!-- logo image acts as a link to the homepage. -->
+                    <a href="index.html">
+                        <img src="https://img.icons8.com/cotton/100/artificial-intelligence.png" alt="Logo"
+                            style="height: 50px;">
+                    </a>
+                </li>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="models.html">All Models</a></li>
+                <li><a href="profile.html">My profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <div class="container">
+                    <section class="purchased-models">
+                        <h2>My Purchased Models</h2>
+                        <button onclick="showPurchasedModels()" class="btn btn-secondary">View Purchased Models</button>
+                        <div id="purchasedModels"></div>
+                    </section>
+    
+                    <section class="withdraw-funds">
+                        <h2>Withdraw Funds</h2>
+                        <button onclick="checkContractBalance()" class="btn btn-secondary">Check Contract Balance</button>
+                        <button onclick="withdrawFunds()" class="btn btn-primary">Withdraw Funds</button>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    </header>
+</body>
+
+</html>

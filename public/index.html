@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Marketplace</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- the favicon for the webpage -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/100/artificial-intelligence.png">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="blockchain.js" defer></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="background-video">
+        <video id="myVideo" autoplay muted loop>
+            <source src="../../media/ai.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- text on the video -->
+    <div id="video-message">
+        <p id="message-one" class="video-message">The Future of AI at Your Fingertips</p>
+        <p id="message-two" class="video-message">Explore, Purchase, and Integrate Advanced AI Models for Your
+            Projects</p>
+    </div>
+
+    <div class="arrow bounce">
+    </div>
+    
+    <div class="content-wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <!-- logo image acts as a link to the homepage. -->
+                    <a href="index.html">
+                        <img src="https://img.icons8.com/cotton/100/artificial-intelligence.png" alt="Logo"
+                            style="height: 50px;">
+                    </a>
+                </li>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="models.html">All Models</a></li>
+                <li><a href="profile.html">My profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container-center">
+                <section>
+                    <h2 class="feature-title-black">Welcome to AI Model Marketplace</h2>
+                </section>
+                <div class="feature-section">
+                    <section>
+                        <div class="feature-card" data-aos="fade-up">
+                            <video id="video-on-index" autoplay loop muted playsinline>
+                                <source src="../../media/ai_plata.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="feature-text">
+                                <h3 class="feature-title">Cutting-Edge AI Models</h3>
+                                <p class="feature-description">Discover and integrate state-of-the-art AI models into
+                                    your
+                                    projects.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <video id="video-on-index" autoplay loop muted playsinline>
+                                <source src="../../media/blockchain.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="feature-text-blockchain">
+                                <h3 class="feature-title">Blockchain-Powered</h3>
+                                <p class="feature-description">Secure transactions and ownership through blockchain
+                                    technology.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section>
+                    <h2 class="feature-title-black">About Our Project</h2>
+                    <p class="feature-description-black">AI Model Marketplace is a revolutionary platform connecting AI model creators with users
+                        worldwide.
+                        Our mission is to accelerate AI innovation by providing a secure, efficient, and user-friendly
+                        marketplace for cutting-edge AI models.</p>
+                </section>
+
+                <section>
+                    <h2 class="feature-title-black">Ready to Explore?</h2>
+                    <a href="models.html" class="cta-button">Browse AI Models</a>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
